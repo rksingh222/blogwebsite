@@ -22,7 +22,6 @@ header *{
 header .logo{
     float: left;
     height: inherit;
-    border: 1px solid red;
     margin-left: 2em;
 }
 
@@ -52,6 +51,7 @@ header ul li ul{
     right: 0;
     width: 180px;
     display: none;
+    z-index: 88888;
 }
 
 header ul li:hover ul{
@@ -100,7 +100,6 @@ header .menu-toggle{
         width: 100%;
         background: #0E94A0;
         max-height: 0px;
-        border: 1px solid red;
         overflow: hidden;
     }
 
