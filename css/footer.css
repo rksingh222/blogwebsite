@@ -1,3 +1,8 @@
+.big-btn{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+
 .footer{
     height: 400px;
     background: #303036;
@@ -8,35 +13,29 @@
 .footer .footer-content{
     height: 350px;
     display: flex;
-    border: 1px solid red;
 }
 
-.footer .footer-content h1, h2{
-    color:white;
+.footer .footer-content h1, .footer .footer-content h2{
+    color: white;
 }
-
-
-
-
 
 .footer .footer-content .footer-section{
     flex : 1;
-    border : 1px solid white;
     padding : 25px;
 }
 
-.footer .footer-content .footer-section h1 span{
+.footer .footer-content .about h1 span{
     color: #00f0f8;
 }
 
-.footer .footer-content .footer-section .contact span{
+.footer .footer-content .about .contact span{
     margin-top: 4px;
     display: block;
     font-size: 1.1em;
     margin-bottom: 8px;
 }
 
-.footer .footer-content .footer-section .socials a{
+.footer .footer-content .about .socials a{
     display: inline-block;
     border: 1px solid gray;
     width: 45px;
@@ -49,10 +48,46 @@
     transition: all .3s;
 }
 
-.footer .footer-content .footer-section .socials a:hover{
+.footer .footer-content .about .socials a:hover{
     border: 1px solid white;
     color: white;
     transition:  all .3s;
+}
+
+.footer .footer-content .links ul {
+    margin-left: 40px;
+}
+
+.footer .footer-content .links  ul a{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.footer .footer-content .links ul a:hover{
+    padding-left: 5px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .contact-form .contact-input{
+    background: #272727;
+    color:#bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:hover{
+    background: #1a1a1a;
+}
+
+.footer .footer-content .contact-form .contact-btn{
+    float:right;
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
 }
 
 .footer .footer-bottom{
