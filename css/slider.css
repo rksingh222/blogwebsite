@@ -14,6 +14,10 @@ a{
     color: #006669;
 }
 
+.page-wrapper{
+    min-height: 100%;  /*this is added so that bottom does not come up and sticks to the bottom */
+}
+
 .post-slider{
     position: relative;
 }
