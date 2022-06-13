@@ -1,0 +1,46 @@
+.text-input{
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    border-radius: .25rem;
+    border: 1px solid #e0e0e0;
+    line-height: 1.5rem;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
+}
+
+.btn:hover{
+    color: white !important;
+    background: #005558;
+}
+
+.big-btn{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: 'Candal',sans-serif;
+    margin: 5px;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
