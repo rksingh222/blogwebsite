@@ -1,4 +1,8 @@
-.text-input{
+
+*{
+    box-sizing: border-box;
+}
+.text-input {
     padding: 12px 20px;
     width: 100%;
     outline: none;
@@ -9,7 +13,7 @@
     font-weight: 200;
 }
 
-.btn{
+.btn {
     padding: .5rem 1rem;
     background: #006669;
     color: white;
@@ -17,91 +21,139 @@
     border-radius: 0.25rem;
 }
 
-.btn:hover{
+.btn:hover {
     color: white !important;
     background: #005558;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.content{
-    border: 1px solid;
-    width: 90%;
-    margin: 30px auto 30px;
-   
+.page-wrapper a:hover{
+    color: #006669;
 }
 
-.content .main-content.single{
+.page-wrapper{
+    min-height: 100%;  /*this is added so that bottom does not come up and sticks to the bottom */
+}
+
+.content {
+
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+
+.content .main-content.single {
     width: 70%;
     float: left;
     background: white;
     border-radius: 5px;
+    padding: 20px 50px;
+    font-size: 1.1em;
 }
 
 
-.content .main-content.single .post-title{
+.content .main-content.single .post-title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.content .main-content.single .post-content{
+.content .main-content.single .post-content {
     margin-left: 10px;
-    
+
 }
 
-.content .sidebar.single{
+.content .sidebar.single {
     width: 30%;
     float: left;
-    height: 300px;
     padding-left: 10px;
    
+
 }
 
-.content .sidebar.single .section{
+.content .sidebar.single .section {
     background: white;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 20px;
 }
 
-.content .sidebar.single .section .section-title{
+.content .sidebar.single .section .section-title {
     margin: 10px 0px 10px 0px;
 }
 
-.content .sidebar.single .popular .post{
+.content .sidebar.single .popular .post {
     border-top: 1px solid #e0e0e0;
     margin-top: 10px;
     padding-top: 10px;
 }
 
-.content .sidebar.single .popular .post img{
+.content .sidebar.single .popular .post img {
     height: 60px;
     width: 75px;
     float: left;
 }
 
-.content .sidebar.single .popular .post h4{
+.content .sidebar.single .popular .post h4 {
     overflow: auto;
     padding-left: 10px;
 }
 
-.content .sidebar.single .section.topics ul{
-    list-style:none;
+.content .sidebar.single .section.topics ul {
+    list-style: none;
     border-top: 1px solid #e0e0e0;
 }
 
-.content .sidebar.single .section.topics ul li a{
+.content .sidebar.single .section.topics ul li a {
     border-bottom: 1px solid #e0e0e0;
     display: block;
     padding: 10px 0px 10px 0px;
     transition: all 0.3s;
 }
 
-.content .sidebar.single .section.topics ul li a:hover{
+.content .sidebar.single .section.topics ul li a:hover {
     padding-left: 10px;
     transition: all 0.3s;
+}
+
+@media screen and (max-width:934px) {
+
+    /* Single Post Module */
+    .content {
+        width: 100%;
+    }
+    .content .div-wrapper{
+        padding: 10px;
+    }
+
+    /* I added this here because when there is a sidebar we cannot set the clearfix because then it clears float and sidebar does not add itself near to adjacent but moves down
+    .because there is float to the element we need to clear the float for the wrapping container so that it occupies the width and height its child
+    as we cannot add clearfix directly instead i had to add clear to the div-wrapper element and add the clearfix property when the size reduces to 934px
+    */
+    .content .div-wrapper.clear{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .content .main-content.single {
+        width: 100%;
+    }
+
+    .content .sidebar.single {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .content .main-content.single {
+        padding: 10px 20px;
+    }
+
 }

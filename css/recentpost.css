@@ -22,10 +22,6 @@
     background: #005558;
 }
 
-.page-wrapper{
-    min-height: 100%;  /*this is added so that bottom does not come up and sticks to the bottom */
-}
-
 .clearfix::after{
     content: '';
     display: block;
@@ -35,13 +31,13 @@
 .content{
     width: 90%;
     margin: 30px auto 30px;
+    border: 1px solid red;
    
 }
 
 .content .main-content{
     width: 70%;
     float: left;
-    border: 1px solid red;
 }
 
 .content .main-content .recent-post-title{
@@ -50,7 +46,7 @@
 }
 
 .content .main-content .post{
-    width: 98%;
+    width: 95%;
     height: 270px;
     margin: 20px auto;
     border-radius: 5px;
@@ -96,9 +92,7 @@
 .content .sidebar{
     width: 30%;
     float: left;
-    
-    height: 300px;
-    border: 1px solid green;
+    border: 1px dashed blue;
 }
 
 .content .sidebar .section{
@@ -131,4 +125,27 @@
 .content .sidebar .section.topics ul li a:hover{
     padding-left: 10px;
     transition: all 0.3s;
+}
+
+@media screen and (max-width:934px) {
+    .content{
+        width: 100%;
+    }
+    .content .main-content{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content .main-content .post{
+        width: 100%;
+    }
+
+    .content .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    .content .sidebar .section.search{
+        margin-top: 30px;
+    }
+
 }

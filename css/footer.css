@@ -8,11 +8,11 @@
     background: #303036;
     color: #d3d3d3;
     position: relative;
-    
 }
 .footer .footer-content{
     height: 350px;
     display: flex;
+    
 }
 
 .footer .footer-content h1, .footer .footer-content h2{
@@ -22,6 +22,7 @@
 .footer .footer-content .footer-section{
     flex : 1;
     padding : 25px;
+ 
 }
 
 .footer .footer-content .about h1 span{
@@ -100,4 +101,22 @@
     left: 0px;
     padding-top: 15px;
     text-align: center;
+}
+
+@media screen and (max-width:934px) {
+    .footer{
+        height: auto;
+    }
+    .footer .footer-content{
+        height: auto;
+        flex-direction: column;
+    }
+    .footer .footer-bottom{
+        position: static;
+    }
+
+    .footer .footer-content .contact-form .contact-btn{
+        width: 100%;
+    }
+    
 }

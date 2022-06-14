@@ -37,4 +37,21 @@
 .auth-content form p a{
     text-decoration: underline;
 }
+@media screen and (max-width:934px){
+    .auth-content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:770px){
+    .auth-content{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .auth-content{
+        width: 90%;
+    }
+}
 
